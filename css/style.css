@@ -76,7 +76,7 @@ body {
     flex-direction: column;
     gap: 5px;
     border-left: 3px solid #ffcc00;
-    border-top: 4px solid #ffcc00;
+    border-top: 5px solid #ffcc00;
     padding: 25px;
     background: linear-gradient(170deg, #f8f9fa, #e9ecef, rgba(255, 253, 245, 0.3));
 }
@@ -87,7 +87,7 @@ body {
     flex-direction: column;
     gap: 5px;
     border-right: 3px solid #ffcc00;
-    border-bottom: 4px solid #ffcc00;
+    border-bottom: 5px solid #ffcc00;
     background: linear-gradient(170deg, #f8f9fa, #e9ecef, rgba(255, 253, 245, 0.3));
     padding: 50px;
 }
@@ -249,4 +249,6 @@ footer a:hover {
 
 .jaartal {
     text-align: right;
+    padding-bottom: 15px;
+    padding-right: 10px;
 }

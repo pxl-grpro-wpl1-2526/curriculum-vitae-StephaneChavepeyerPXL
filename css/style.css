@@ -18,15 +18,15 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 25px;
 }
 
-.taaltabel tr:nth-child(odd) {
+.taaltabeldesktop tr:nth-child(odd) {
     background: rgba(255, 204, 0, 0.4);
 }
 
-.taaltabel tr:nth-child(even) {
+.taaltabeldesktop tr:nth-child(even) {
     background: rgba(211, 222, 234, 0.5);
 }
 
-.taaltabel td {
+.taaltabeldesktop td {
     padding: 8px 12px;
 }
 
@@ -181,7 +181,7 @@ h1::after {
     left: 0;
     width: 100%;
     height: 4px;
-    background: #c9cdd3;
+    background: #ffcc00;
     border-radius: 1px;
 }
 
@@ -189,7 +189,6 @@ footer a {
     text-decoration: none;
     color: black;
     font-style: italic;
-    transition: all 0.2s ease;
 }
 
 footer a:hover {
@@ -199,7 +198,6 @@ footer a:hover {
 
 .cv-links, .cv-rechts {
     background-color: rgba(255, 255, 245, 0.15);
-    animation: fadeIn 0.5s ease;
 }
 
 .cv-links h3 {
@@ -218,13 +216,14 @@ footer a:hover {
 
 .cv-links section, .cv-rechts section {
     transition: all 0.3s ease;
-    border: 1px solid transparent;
+    border: 3px solid transparent;
+    padding: 2px;
 }
 
 .cv-links section:hover, .cv-rechts section:hover {
     box-shadow: 0 8px 25px rgba(255, 204, 0, 0.35);
     border-color: rgba(255, 204, 0, 0.3);
-    transform: translateY(-3px);
+    transform: translateY(-4px);
 }
 
 .foto {
@@ -243,7 +242,7 @@ footer a:hover {
     color: #ffcc00;
     font-weight: bold;
     line-height: 1;
-    margin-left: 35px;
+    margin-left: 50px;
 }
 
 .introductie {
@@ -259,7 +258,9 @@ footer a:hover {
     text-align: right;
     padding-bottom: 15px;
     padding-right: 10px;
+    font-style: italic;
 }
+
 .color {
     color: #ffcc00;
     font-weight: bold;
@@ -282,3 +283,80 @@ footer a:hover {
 .plus {
     color: #ffcc00;
 }
+
+h5 {
+    margin-bottom: 0;
+    font-size: 12pt;
+}
+
+.taaltabeldesktop,
+.talenkennismobile {
+    display: none;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* mobiel */
+@media screen and (max-width: 575px) {
+    .talenkennismobile {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .taaltabeldesktop {
+        display: none;
+    }
+
+    .taal-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 15px;
+        background: rgba(255, 204, 0, 0.15);
+        border-radius: 6px;
+        border-left: 4px solid #ffcc00;
+        transition: all 0.3s ease;
+    }
+
+    .taal-item:hover {
+        background: rgba(255, 204, 0, 0.25);
+        transform: translateX(3px);
+    }
+
+    .taal-item .taal {
+        font-weight: bold;
+        color: #333;
+    }
+
+    .taal-item .niveau {
+        color: #555;
+        font-style: italic;
+    }
+}
+
+/* tablet */
+@media screen and (min-width: 576px) and (max-width: 991px) {
+    .taaltabeldesktop {
+        display: table;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        border-collapse: collapse;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 992px) {
+    .taaltabeldesktop {
+        display: table;
+        border-collapse: collapse;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+}
+

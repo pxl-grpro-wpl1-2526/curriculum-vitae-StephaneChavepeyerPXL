@@ -19,15 +19,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .taaltabel tr:nth-child(odd) {
-    background: #ffcc00;
+    background: rgba(255, 204, 0, 0.4);
 }
 
 .taaltabel tr:nth-child(even) {
-    background: #d3deea;
+    background: rgba(211, 222, 234, 0.5);
 }
 
 .taaltabel td {
-    padding: 5px;
+    padding: 8px 12px;
 }
 
 html, body {
@@ -37,8 +37,8 @@ html, body {
 }
 
 body {
-        background: linear-gradient(to bottom, rgba(255, 204, 0, 0.15), rgba(201, 205, 211, 0.6), rgba(255, 204, 0, 0.15));
-        min-height: 100vh;
+    background: linear-gradient(to bottom, rgba(255, 204, 0, 0.15), rgba(201, 205, 211, 0.6), rgba(255, 204, 0, 0.15));
+    min-height: 100vh;
     }
 
 .taal {
@@ -52,18 +52,22 @@ body {
 
 .footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 5px;
-    background: rgba(255, 204, 0, 0.2);
+    padding: 7px;
+    align-items: center;
+    background: linear-gradient(#f8f9fa, #e9ecef, rgba(255, 253, 245, 0.3));
     margin-left: 10rem;
-    margin-right: 10rem;
+    margin-right: 10.5rem;
     padding-left: 10px;
     padding-right: 10px;
+    border-top: #ffcc00 2px solid;
 }
 
 .cv-kolommen {
     display: flex;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap: 1.5rem;
     margin-left: 10rem;
     margin-right: 10rem;
     margin-top: 2.5rem;
@@ -72,7 +76,8 @@ body {
 
 .cv-links {
     display: flex;
-    width: 35%;
+    flex: 0 0 33%;
+    min-width: 350px;
     flex-direction: column;
     gap: 5px;
     border-left: 3px solid #ffcc00;
@@ -83,7 +88,8 @@ body {
 
 .cv-rechts {
     display: flex;
-    width: 65%;
+    flex: 0 0 64%;
+    min-width: 550px;
     flex-direction: column;
     gap: 5px;
     border-right: 3px solid #ffcc00;
@@ -188,6 +194,7 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+    color: #ffcc00;
 }
 
 .cv-links, .cv-rechts {
@@ -241,6 +248,7 @@ footer a:hover {
 
 .introductie {
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .contact, .opleiding, .vaardigheden, .talenkennis {
@@ -251,4 +259,26 @@ footer a:hover {
     text-align: right;
     padding-bottom: 15px;
     padding-right: 10px;
+}
+.color {
+    color: #ffcc00;
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+.contact a {
+    text-decoration: none;
+    color: black;
+}
+.contact a:hover {
+    text-decoration: none;
+    color: #ffcc00;
+}
+
+.klik {
+    color: #ffcc00;
+    font-weight: bold;
+}
+.plus {
+    color: #ffcc00;
 }
